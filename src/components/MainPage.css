@@ -1,0 +1,65 @@
+.content {
+	grid-area: content;
+	/* background-color: rgba(0, 255, 255, 0.15); */
+}
+.img__content {
+	background-image: url("../img/city.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 200px;
+}
+.main__content {
+}
+.profile {
+	display: flex;
+	align-items: flex-start;
+	/* border: #333 1px solid; */
+}
+.avatar-profile {
+	background: url("../ava/ava4.jpg") no-repeat center;
+	min-height: 90px;
+	min-width: 90px;
+}
+.data-profile {
+	margin-left: 25px;
+}
+.name-profile {
+	/* margin-top: -10px; */
+	margin-bottom: 25px;
+	line-height: 1;
+}
+.description-profile p {
+	font-family: "Kreon", serif;
+	font-size: 1.6rem;
+	margin-top: 15px;
+	color: #4b4b4b;
+}
+.description-profile p span,
+.description-profile p a {
+	font-family: "Open Sans", calibri, Arial;
+	margin-left: 10px;
+	font-size: 1.4rem;
+}
+.separator {
+	margin-bottom: 5px;
+	border-top: 1px solid #dee3e9;
+	width: 20%;
+	height: 1px;
+	display: block;
+	margin: 25px 0;
+}
+.new-post {
+	/* border: 1px solid; */
+	/* padding: 0 25px; */
+}
+.new-post h4 {
+	margin-bottom: 10px;
+}
+.textarea-new-message {
+	font-size: 1.6rem;
+	height: 50px;
+	margin-bottom: 15px;
+	background: #f2f7fb;
+	border-radius: 1rem;
+	color: #5b5b5b;
+}

@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
-import NavBar from './components/Navbar';
-import Profile from './components/Profile';
+import Sidebar from './components/Sidebar';
+import MainPage from './components/MainPage';
 
 const App = () => {
 	return (
@@ -10,8 +10,8 @@ const App = () => {
 			<container className="wrapper">
 
 				<Header />
-				<NavBar />
-				<Profile />
+				<Sidebar />
+				<MainPage />
 
 			</container>
 		</div>

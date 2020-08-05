@@ -1,6 +1,7 @@
-import React from 'react';
+import React from 'react'
+import './MainPage.css'
 
-const Profile = () => {
+const MainPage = () => {
 	return <div className="content">
 
 		<div className="img__content"></div>
@@ -42,4 +43,4 @@ const Profile = () => {
 	</div>
 }
 
-export default Profile
+export default MainPage

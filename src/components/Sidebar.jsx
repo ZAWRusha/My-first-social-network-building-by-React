@@ -1,6 +1,7 @@
 import React from 'react';
+import './Sidebar.css'
 
-const NavBar = () => {
+const Sidebar = () => {
 	return <nav className="sidebar grid__item">
 		<menu className="nav">
 			<ul>
@@ -14,4 +15,4 @@ const NavBar = () => {
 	</nav>
 }
 
-export default NavBar
+export default Sidebar
