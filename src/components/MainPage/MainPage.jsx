@@ -1,19 +1,17 @@
 import React from 'react'
-import './MainPage.css'
+import s from './MainPage.module.css'
 import MyPosts from './MyPosts/MyPosts.jsx'
 
 const MainPage = () => {
 	return (
-		<div className="content">
-
-			<div className="img__content"></div>
-			<div className="main__content grid__item">
-
-				<div className="profile">
-					<div className="avatar-profile"></div>
-					<div className="data-profile">
-						<h3 className="name-profile">John Doe</h3>
-						<div className="description-profile">
+		<div>
+			<div className={s.img__content}></div>
+			<div className="grid__item">
+				<div className={s.profile}>
+					<div className={s.avatar_profile}></div>
+					<div className={s.data_profile}>
+						<h3 className={s.name_profile}>John Doe</h3>
+						<div className={s.description_profile}>
 							<p>Date of birth: <span>16 february</span></p>
 							<p>City: <span>Krasnoyarsk</span></p>
 							<p>Education: <span>KrasGASA</span></p>
@@ -22,11 +20,10 @@ const MainPage = () => {
 						</div>
 					</div>
 				</div>
-				<div className="separator"></div>
-
-				<MyPosts />
-
+				<div className={s.separator}></div>
 			</div>
+			<MyPosts />
+
 		</div>
 	)
 }

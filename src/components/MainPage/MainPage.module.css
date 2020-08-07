@@ -1,41 +1,35 @@
-.content {
-	grid-area: content;
-	/* background-color: rgba(0, 255, 255, 0.15); */
-}
 .img__content {
 	background-image: url("../../img/city.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	height: 200px;
 }
-.main__content {
-}
 .profile {
 	display: flex;
 	align-items: flex-start;
 	/* border: #333 1px solid; */
 }
-.avatar-profile {
+.avatar_profile {
 	background: url("../../ava/ava3.jpg") no-repeat center;
 	min-height: 90px;
 	min-width: 90px;
 }
-.data-profile {
+.data_profile {
 	margin-left: 25px;
 }
-.name-profile {
+.name_profile {
 	font-weight: 400;
 	margin-bottom: 25px;
 	line-height: 1;
 }
-.description-profile p {
+.description_profile p {
 	font-family: "Kreon", serif;
 	font-size: 1.6rem;
 	margin-top: 15px;
 	color: #4b4b4b;
 }
-.description-profile p span,
-.description-profile p a {
+.description_profile p span,
+.description_profile p a {
 	font-family: "Open Sans", calibri, Arial;
 	margin-left: 10px;
 	font-size: 1.4rem;

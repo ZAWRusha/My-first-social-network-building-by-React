@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/Header/Header'
 import Sidebar from './components/Sidebar/Sidebar'
 import MainPage from './components/MainPage/MainPage'
+import Messages from './components/Messages/Messages'
 
 const App = () => {
 	return (
@@ -12,7 +13,10 @@ const App = () => {
 
 					<Header />
 					<Sidebar />
-					<MainPage />
+					{/* <MainPage /> */}
+					<div class="main-content">
+						<Messages />
+					</div>
 
 				</container>
 			</div>
