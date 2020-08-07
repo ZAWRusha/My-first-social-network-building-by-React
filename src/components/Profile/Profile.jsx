@@ -1,8 +1,8 @@
 import React from 'react'
-import s from './MainPage.module.css'
+import s from './Profile.module.css'
 import MyPosts from './MyPosts/MyPosts.jsx'
 
-const MainPage = () => {
+const Profile = () => {
 	return (
 		<div>
 			<div className={s.img__content}></div>
@@ -21,11 +21,10 @@ const MainPage = () => {
 					</div>
 				</div>
 				<div className={s.separator}></div>
+				<MyPosts />
 			</div>
-			<MyPosts />
-
 		</div>
 	)
 }
 
-export default MainPage
+export default Profile

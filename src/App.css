@@ -57,6 +57,22 @@ html {
 }
 body {
 	background-image: url(../src/img/wave.jpg);
+	background-size: cover;
+}
+.bgi {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(79, 179, 241, 0.9);
+}
+.container {
+	margin: 0 auto;
+	max-width: 1600px;
+	min-width: 760px;
 }
 a {
 	font-family: "Open Sans", Calibri, Arial, sans-serif;
@@ -188,21 +204,6 @@ span {
 	color: #5b5b5b;
 	font-weight: 400;
 	font-size: 1.4rem;
-}
-.bgi {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background: rgba(79, 179, 241, 0.9);
-}
-.container {
-	margin: 0 auto;
-	max-width: 1600px;
-	min-width: 760px;
 }
 .wrapper {
 	display: grid;

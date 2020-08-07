@@ -2,25 +2,34 @@ import React from 'react'
 import './App.css'
 import Header from './components/Header/Header'
 import Sidebar from './components/Sidebar/Sidebar'
-import MainPage from './components/MainPage/MainPage'
+import { BrowserRouter, Route } from 'react-router-dom'
+import Profile from './components/Profile/Profile'
 import Messages from './components/Messages/Messages'
+import News from './components/News/News'
+import Music from './components/Music/Music'
+import Settings from './components/Settings/Settings'
 
 const App = () => {
 	return (
-		<div className="bgi">
-			<div className="container">
-				<container className="wrapper">
+		<BrowserRouter>
+			<div className="bgi">
+				<div className="container">
+					<container className="wrapper">
 
-					<Header />
-					<Sidebar />
-					{/* <MainPage /> */}
-					<div class="main-content">
-						<Messages />
-					</div>
+						<Header />
+						<Sidebar />
+						<div class="main-content">
+							<Route path='/profile' component={Profile} />
+							<Route path='/Messages' component={Messages} />
+							<Route path='/News' component={News} />
+							<Route path='/Music' component={Music} />
+							<Route path='/Settings' component={Settings} />
+						</div>
 
-				</container>
+					</container>
+				</div>
 			</div>
-		</div>
+		</BrowserRouter>
 	)
 }
 
