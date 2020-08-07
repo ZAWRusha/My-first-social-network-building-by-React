@@ -44,15 +44,19 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-	color: #333;
+	color: #252525;
 	/* blue color rgba(9, 114, 180, 1); */
 	/* orang color rgba(242, 121, 53, 1); */
+	/* background-color: rgb(242, 242, 242); */
+	/* background-color: #4fb3f1; Основной цвет фона - голубой*/
+	/* background-color: rgba(79, 179, 241, 1);  Основной цвет фона - голубой */
 }
 html {
 	font-size: 10px;
+	outline: none;
 }
 body {
-	background-color: #4fb3f1;
+	background-image: url(../src/img/wave.jpg);
 }
 a {
 	font-family: "Open Sans", Calibri, Arial, sans-serif;
@@ -76,7 +80,7 @@ a:hover {
 	line-height: 1;
 	background-color: #4990e2;
 	border: 1px solid #4990e2;
-	margin-bottom: 1.1rem;
+	/* margin-bottom: 1.1rem; */
 	color: #fff;
 	border-radius: 0.3rem;
 	overflow: hidden;
@@ -185,24 +189,32 @@ span {
 	font-weight: 400;
 	font-size: 1.4rem;
 }
+.bgi {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(79, 179, 241, 0.9);
+}
 .container {
 	margin: 0 auto;
-	max-width: 80%;
+	max-width: 1600px;
 	min-width: 760px;
 }
 .wrapper {
 	display: grid;
-
 	grid-template-areas:
 		"header header"
-		"nav content";
+		"leftSidebar content";
 
 	grid-template-rows: 100px auto;
 	grid-template-columns: 200px 1fr;
 	background: #eff4fa;
 	margin-top: 50px;
 	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-	border-radius: 20px;
 }
 .grid__item {
 	text-align: left;

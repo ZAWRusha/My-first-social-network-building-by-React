@@ -1,21 +1,23 @@
-import React from 'react';
-import './App.css';
-import Header from './components/Header';
-import Sidebar from './components/Sidebar';
-import MainPage from './components/MainPage';
+import React from 'react'
+import './App.css'
+import Header from './components/Header/Header'
+import Sidebar from './components/Sidebar/Sidebar'
+import MainPage from './components/MainPage/MainPage'
 
 const App = () => {
 	return (
-		<div className="container">
-			<container className="wrapper">
+		<div className="bgi">
+			<div className="container">
+				<container className="wrapper">
 
-				<Header />
-				<Sidebar />
-				<MainPage />
+					<Header />
+					<Sidebar />
+					<MainPage />
 
-			</container>
+				</container>
+			</div>
 		</div>
 	)
 }
 
-export default App;
+export default App
