@@ -10,7 +10,8 @@ const MyPosts = () => {
 			<div className={s.button}>
 				<a className="btn" href="">Send</a>
 			</div>
-			<Post />
+			<Post message="Hi, how are you?" like="2" />
+			<Post message="It's my second post." like="10" />
 			<Post />
 			<Post />
 
