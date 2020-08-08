@@ -50,16 +50,28 @@
 	/* background-color: rgb(242, 242, 242); */
 	/* background-color: #4fb3f1; Основной цвет фона - голубой*/
 	/* background-color: rgba(79, 179, 241, 1);  Основной цвет фона - голубой */
+
+	/*
+	font-family: 'Source Sans Pro',"Open Sans","Segoe UI",Tahoma
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: rgb(33, 37, 41); Основной цвет текста
+	*/
 }
 html {
 	font-size: 10px;
 	outline: none;
+	margin-right: calc(
+		-1 * (100vw - 100%)
+	); /* Вычисляем ширину вертикальной полосы прокрутки при динамическом увеличении контента и задаем странице сдвиг */
+	overflow-x: hidden; /* Скрываем горизонтальная полоса прокрутки*/
 }
 body {
-	background-image: url(../src/img/wave.jpg);
+	background: linear-gradient(rgba(79, 179, 241, 0.9), rgba(79, 179, 241, 0.9)), url(../src/img/wave.jpg);
 	background-size: cover;
 }
-.bgi {
+/* .bgi {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -68,7 +80,7 @@ body {
 	height: 100%;
 	width: 100%;
 	background: rgba(79, 179, 241, 0.9);
-}
+} */
 .container {
 	margin: 0 auto;
 	max-width: 1600px;
@@ -219,11 +231,12 @@ span {
 }
 .grid__item {
 	text-align: left;
-	border: 1px solid rgba(255, 255, 255, 0.2);
 	padding: 25px;
 	background: rgba(255, 255, 255, 1);
 }
 .main-content {
 	grid-area: content;
+	max-width: 1400px;
+	/* border: 1px solid; */
 	/* background-color: rgba(0, 255, 255, 0.15); */
 }

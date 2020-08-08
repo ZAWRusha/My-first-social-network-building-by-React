@@ -1,15 +1,16 @@
 import React from 'react';
-import './Sidebar.css'
+import s from './Sidebar.module.css'
+import { NavLink } from 'react-router-dom'
 
 const Sidebar = () => {
-	return <nav className="sidebar grid__item">
+	return <nav className={`${s.sidebar} ${"grid__item"}`}>
 		<menu className="nav">
 			<ul>
-				<li><a href="/Profile">Profile</a></li>
-				<li><a href="/Messages">Messages</a></li>
-				<li><a href="/News">News</a></li>
-				<li><a href="/Music">Music</a></li>
-				<li><a href="/Settings">Settings</a></li>
+				<li><NavLink to="/Profile" activeClassName={s.activeLink}>Profile</NavLink></li>
+				<li><NavLink to="/Messages" activeClassName={s.activeLink}>Messages</NavLink></li>
+				<li><NavLink to="/News" activeClassName={s.activeLink}>News</NavLink></li>
+				<li><NavLink to="/Music" activeClassName={s.activeLink}>Music</NavLink></li>
+				<li><NavLink to="/Settings" activeClassName={s.activeLink}>Settings</NavLink></li>
 			</ul>
 		</menu>
 	</nav>

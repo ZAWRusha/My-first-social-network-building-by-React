@@ -1,6 +1,4 @@
 .sidebar {
-	grid-area: leftSidebar;
-	font-family: "Open Sans", calibri, Arial;
 	border-right: 1px solid #dee3e9;
 }
 li {
@@ -22,7 +20,8 @@ li > a {
 	transition: all 0.3s ease;
 	border: none;
 }
-li > a:hover {
+li > a:hover,
+.activeLink {
 	background-size: 100% 1px;
 	color: #fff;
 	padding: 5px 20px;

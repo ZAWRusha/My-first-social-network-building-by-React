@@ -19,7 +19,7 @@ const App = () => {
 						<Header />
 						<Sidebar />
 						<div class="main-content">
-							<Route path='/profile' component={Profile} />
+							<Route path='/Profile' component={Profile} />
 							<Route path='/Messages' component={Messages} />
 							<Route path='/News' component={News} />
 							<Route path='/Music' component={Music} />
