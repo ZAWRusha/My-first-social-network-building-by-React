@@ -60,12 +60,12 @@
 	*/
 }
 html {
-	font-size: 10px;
-	outline: none;
 	margin-right: calc(
 		-1 * (100vw - 100%)
 	); /* Вычисляем ширину вертикальной полосы прокрутки при динамическом увеличении контента и задаем странице сдвиг */
 	overflow-x: hidden; /* Скрываем горизонтальная полоса прокрутки*/
+	font-size: 10px;
+	outline: none;
 }
 body {
 	background: linear-gradient(rgba(79, 179, 241, 0.9), rgba(79, 179, 241, 0.9)), url(../src/img/wave.jpg);
@@ -237,6 +237,7 @@ span {
 .main-content {
 	grid-area: content;
 	max-width: 1400px;
+	font-size: 1.6rem;
 	/* border: 1px solid; */
 	/* background-color: rgba(0, 255, 255, 0.15); */
 }

@@ -1,0 +1,33 @@
+.chat_wrapper {
+	display: flex;
+	/* border: 1px solid; */
+}
+
+.contacts {
+	border-right: 1px solid #c3c2c7;
+	width: 33.3%;
+	min-width: 250px;
+}
+.name {
+	border: 1px solid #f3f2f7;
+	margin: 25px;
+}
+
+.messages {
+	width: 66.7%;
+	min-width: 500px;
+	/* padding: 0 25px; */
+	/* border: 1px solid; */
+}
+.title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 25px;
+	background-color: #f3f2f7;
+	/* border: 1px solid; */
+}
+.message {
+	border: 1px solid #f3f2f7;
+	margin: 25px;
+}
