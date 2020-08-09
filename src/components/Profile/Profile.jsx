@@ -5,24 +5,56 @@ import MyPosts from './MyPosts/MyPosts.jsx'
 const Profile = () => {
 	return (
 		<div>
-			<div className={s.img__content}></div>
-			<div className="grid__item">
+			<div className={s.profile_wrapper}>
+				<div className={s.img__content}></div>
+
 				<div className={s.profile}>
+
 					<div className={s.avatar_profile}></div>
+
 					<div className={s.data_profile}>
-						<h3 className={s.name_profile}>John Doe</h3>
-						<div className={s.description_profile}>
-							<p>Date of birth: <span>16 february</span></p>
-							<p>City: <span>Krasnoyarsk</span></p>
-							<p>Education: <span>KrasGASA</span></p>
-							<p>Tel: <span>+7-999-199-99-99</span></p>
-							<p>Web Site: <a href="">http://mySite.ru</a></p>
+
+
+						<div className={s.block}>
+							<h2 className={s.name_title}>John Doe</h2>
+							<div className={s.description}>Russia, Krasnoyarsk</div>
 						</div>
+						<div className="separator_v"></div>
+
+						<div className={s.block}>
+							<h4 className={s.name_profile}>Siberian Federal University</h4>
+							<div className={s.description}>Education</div>
+						</div>
+						<div className="separator_v"></div>
+
+						<div className={s.block}>
+							<h4 className={s.name_profile}>+7-999-199-99-99</h4>
+							<div className={s.description}>Telephone</div>
+						</div>
+						<div className="separator_v"></div>
+
+						<div className={s.block}>
+							<h4 className={s.name_profile}>mymail@gmail.com</h4>
+							<div className={s.description}>Mail</div>
+						</div>
+						<div className="separator_v"></div>
+
+						<div className={s.block}>
+							<h4 className={s.name_profile}>1985.02.16</h4>
+							<div className={s.description}>Date of birth</div>
+						</div>
+
 					</div>
+
 				</div>
-				<div className={s.separator}></div>
-				<MyPosts />
 			</div>
+
+			<div className="main-content_margin">
+				<div className="grid__item">
+					<MyPosts />
+				</div>
+			</div>
+
 		</div>
 	)
 }

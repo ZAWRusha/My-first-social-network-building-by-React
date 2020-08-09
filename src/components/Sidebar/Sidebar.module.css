@@ -1,5 +1,6 @@
 .sidebar {
 	border-right: 1px solid #dee3e9;
+	box-shadow: 1px 1px 5px rgba(150, 150, 150, 0.15);
 }
 li {
 	display: block;

@@ -14,12 +14,6 @@
 	background: rgba(95, 185, 241, 0.2);
 	border-radius: 0 1rem 1rem;
 	color: #5b5b5b;
-	/* white-space: pre-wrap; */
-}
-.post img {
-	width: 50px;
-	margin-right: 10px;
-	border-radius: 50%;
 }
 .like {
 	display: flex;

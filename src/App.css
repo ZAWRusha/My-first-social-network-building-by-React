@@ -158,33 +158,38 @@ h1 {
 	font-family: "Kreon", serif;
 	font-size: 4.2rem;
 	font-weight: 300;
-	text-align: center;
+	line-height: 130%;
+	letter-spacing: 0.1rem;
+	/* text-align: center; */
 	margin: 0 auto;
-	color: #4b4b4b;
+	color: #3a444e;
 }
 h2 {
 	font-family: "Kreon", serif;
 	font-weight: 300;
-	font-size: 3.6rem;
-	text-transform: uppercase;
-	line-height: 50px;
-	color: #4b4b4b;
+	font-size: 3.2rem;
+	/* text-transform: uppercase; */
+	line-height: 110%;
+	letter-spacing: 0.05rem;
+	color: #3a444e;
 }
 h3 {
 	font-family: "Kreon", serif;
 	font-weight: 300;
-	font-size: 2.7rem;
+	font-size: 2.4rem;
 	line-height: 110%;
-	color: #4b4b4b;
+	letter-spacing: 0.05rem;
+	color: #3a444e;
 }
 h4,
 h5,
 h6 {
 	font-family: "Kreon", serif;
 	font-weight: 300;
-	font-size: 2.2rem;
-	line-height: 100%;
-	color: #4b4b4b;
+	font-size: 2rem;
+	line-height: 90%;
+	letter-spacing: 0.05rem;
+	color: #3a444e;
 }
 textarea {
 	font-family: "Open Sans", Calibri, sans-serif;
@@ -240,4 +245,31 @@ span {
 	font-size: 1.6rem;
 	/* border: 1px solid; */
 	/* background-color: rgba(0, 255, 255, 0.15); */
+}
+.main-content_margin {
+	margin: 20px 60px;
+	border-right: 1px solid #dee3e9;
+	box-shadow: 0px 0px 10px rgba(150, 150, 150, 0.3);
+}
+.separator_h {
+	margin-bottom: 5px;
+	border-top: 1px solid #dee3e9;
+	width: 100%;
+	height: 1px;
+	display: block;
+	/* margin: 25px 0; */
+}
+.separator_v {
+	/* margin-bottom: 5px; */
+	border-left: 1px solid #dee3e9;
+	width: 1px;
+	height: 52px;
+	display: block;
+	/* margin: 25px 0; */
+}
+.ava_round {
+	height: 50px;
+	width: 50px;
+	margin-right: 10px;
+	border-radius: 50%;
 }

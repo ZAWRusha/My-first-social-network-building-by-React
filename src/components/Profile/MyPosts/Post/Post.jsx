@@ -4,7 +4,7 @@ import s from './Post.module.css'
 const Post = (props) => {
 	return (
 		<div className={s.post}>
-			<img src={require("../../../../ava/ava3.jpg")} alt="ava3" />
+			<img src={require("../../../../ava/ava3.jpg")} alt="ava3" className="ava_round" />
 			<p>
 				{props.message}
 			</p>

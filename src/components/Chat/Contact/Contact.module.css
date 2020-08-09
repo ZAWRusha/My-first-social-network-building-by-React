@@ -1,0 +1,79 @@
+.contact {
+	display: flex;
+	border-top: 1px solid #dee3e9;
+	padding: 15px 25px;
+	/* margin-top: 0px; */
+}
+.contact:hover {
+	background-color: #eff4fa;
+	cursor: pointer;
+}
+.activeLink,
+.contact:focus {
+	background-color: #eff4fa;
+	border-left: 2px solid #ff5f09;
+	cursor: pointer;
+}
+.contact_wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-left: 10px;
+	/* padding: 5px 0; */
+	/* border: 1px solid red; */
+}
+.title {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 10px;
+	/* border: 1px solid green; */
+}
+.title_top {
+	display: flex;
+	align-items: flex-start;
+}
+.name {
+	font-weight: 400;
+}
+.status {
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	margin: 5px;
+}
+.status_on {
+	background-color: #34aa44;
+	margin-left: 5px;
+}
+.date_last_online {
+	color: #899eb1;
+	font-size: 1.4rem;
+}
+.message {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/* border: 1px solid blue; */
+}
+.text {
+	font-family: "Open Sans", Calibri, sans-serif;
+	font-size: 1.7rem;
+	line-height: 2rem;
+	color: #556b80;
+	font-weight: 400;
+}
+.count {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 25px;
+	min-height: 25px;
+	border-radius: 50%;
+	margin-left: 5px;
+	background-color: #5fb9f1;
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: 300;
+}
