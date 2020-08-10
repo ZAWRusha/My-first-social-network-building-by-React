@@ -34,7 +34,7 @@
 .block {
 	display: flex;
 	flex-direction: column;
-	justify-content: end;
+	justify-content: flex-end;
 	margin: 0 35px;
 	/* border: 1px solid; */
 }

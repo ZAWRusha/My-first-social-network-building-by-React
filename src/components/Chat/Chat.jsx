@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './Chat.module.css'
 import Contact from './Contact/Contact'
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 
 const Chat = (props) => {
 	return (
@@ -10,12 +10,11 @@ const Chat = (props) => {
 
 				<div className={s.contacts_wrapper}>
 					<h4 className={s.title}>Contacts</h4>
-					<Contact />
-					<NavLink to="/Contact" activeClassName={s.activeLink}></NavLink>
-					<Contact />
-					<Contact />
-					<Contact />
-					<Contact />
+					<Contact id="1" niсkname="Dimych Kuzyberdin" message="Lorem ipsum dolor sit amet consectetur, adipisicing elit..." unread="5" />
+					<Contact id="2" niсkname="Petr Kharitonov" message="Although VS Code has some great built-in functionality for Git" unread="9" />
+					<Contact id="3" niсkname="Alla Polyanskaya" message="Lorem ipsum dolor sit amet consectetur, adipisicing elit adipisicing elit adipisicing elit" unread="1" />
+					<Contact id="4" niсkname="Svetlana Torgasheva" message="Who is there?" unread="" />
+					<Contact id="5" niсkname="Tony Bochka" message="Dolor sit amet consectetur, adipisicing elit..." unread="" />
 				</div>
 
 				<div className={s.messages}>
@@ -29,8 +28,6 @@ const Chat = (props) => {
 
 		</div >
 	)
-
-
 }
 
 export default Chat

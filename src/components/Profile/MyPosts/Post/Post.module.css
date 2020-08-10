@@ -1,8 +1,8 @@
 .post {
 	display: flex;
-	align-items: start;
+	align-items: flex-start;
 }
-.post p {
+.post_text {
 	display: inline-block;
 	font-family: "Open Sans", Calibri, sans-serif;
 	font-weight: 400;
@@ -20,7 +20,7 @@
 	align-items: flex-end;
 	justify-content: center;
 	width: 25px;
-	height: 35px;
+	height: 37px;
 	background: url(../../../../icons/Like.svg) no-repeat top center;
 	background-size: contain;
 	font-size: 1.2rem;
