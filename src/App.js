@@ -14,11 +14,11 @@ const App = () => {
 		<BrowserRouter>
 			<div className="bgi">
 				<div className="container">
-					<container className="wrapper">
+					<div className="wrapper">
 
 						<Header />
 						<Sidebar />
-						<div class="main-content">
+						<div className="main-content">
 							<Route path='/Profile' component={Profile} />
 							<Route path='/Chat' component={Chat} />
 							<Route path='/News' component={News} />
@@ -26,7 +26,7 @@ const App = () => {
 							<Route path='/Settings' component={Settings} />
 						</div>
 
-					</container>
+					</div>
 				</div>
 			</div>
 		</BrowserRouter>

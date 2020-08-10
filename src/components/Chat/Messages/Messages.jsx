@@ -1,12 +1,12 @@
 import React from 'react'
-import s from './Message.module.css'
+import s from './Messages.module.css'
 // import { NavLink } from 'react-router-dom'
 
-const Message = (props) => {
+const Messages = (props) => {
 	return (
 
 		<div className={s.message}>{props.message}</div>
 	)
 }
 
-export default Message
+export default Messages

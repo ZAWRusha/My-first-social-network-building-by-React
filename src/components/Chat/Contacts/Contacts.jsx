@@ -1,8 +1,9 @@
 import React from 'react'
-import s from './Contact.module.css'
+import s from './Contacts.module.css'
 import { NavLink } from 'react-router-dom'
 
 const Contact = (props) => {
+	console.log(props.nickname);
 	return (
 		<NavLink to={"/Chat/" + props.id} activeClassName={s.activeLink} className={s.contact}>
 
@@ -12,7 +13,7 @@ const Contact = (props) => {
 
 				<div className={s.title}>
 					<div className={s.title_top}>
-						<h4 className={s.name}>{props.niсkname}</h4>
+						<h4 className={s.name}>{props.nickname}</h4>
 						<div className={`${s.status} ${s.status_on}`}></div>
 					</div>
 					<div className={s.date_last_online}>12:34</div>
