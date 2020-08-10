@@ -12,8 +12,6 @@
 .messages {
 	width: 66.7%;
 	min-width: 500px;
-	/* padding: 0 25px; */
-	/* border: 1px solid; */
 }
 .title {
 	display: flex;
@@ -21,11 +19,4 @@
 	justify-content: center;
 	padding: 25px;
 	color: #899eb1;
-	/* background-color: #f5f9fc; */
-	/* border: 1px solid; */
-}
-
-.message {
-	border: 1px solid #dee3e9;
-	margin: 25px;
 }
