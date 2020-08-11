@@ -6,7 +6,7 @@ const Post = (props) => {
 		<div className={s.post}>
 			<img src={require("../../../../ava/ava3.jpg")} alt="ava3" className="ava_round" />
 			<p className={s.post_text}>
-				{props.message}
+				{props.post}
 			</p>
 			<div className={s.like}>
 				{props.like}
