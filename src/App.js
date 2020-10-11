@@ -9,7 +9,8 @@ import News from './components/News/News'
 import Music from './components/Music/Music'
 import Settings from './components/Settings/Settings'
 
-const App = () => {
+const App = (props) => {
+
 	return (
 		<BrowserRouter>
 			<div className="bgi">
@@ -19,11 +20,11 @@ const App = () => {
 						<Header />
 						<Sidebar />
 						<div className="main-content">
-							<Route path='/Profile' component={Profile} />
-							<Route path='/Chat' component={Chat} />
-							<Route path='/News' component={News} />
-							<Route path='/Music' component={Music} />
-							<Route path='/Settings' component={Settings} />
+							<Route path='/Profile' render={() => <Profile state={props.appState.profilePage} />} />
+							<Route path='/Chat' render={() => <Chat state={props.appState.chatPage} />} />
+							<Route path='/News' render={News} />
+							<Route path='/Music' render={Music} />
+							<Route path='/Settings' render={Settings} />
 						</div>
 
 					</div>
