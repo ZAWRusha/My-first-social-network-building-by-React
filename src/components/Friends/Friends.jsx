@@ -1,15 +1,15 @@
 import React from 'react'
-import s from './Music.module.css'
+import s from './Friends.module.css'
 
-const Music = (props) => {
+const Friends = (props) => {
 	return (
 		<div className="grid__item">
 			<div>
-				Music
+				Friends
 		</div>
 		</div>
 	)
 
 }
 
-export default Music
+export default Friends

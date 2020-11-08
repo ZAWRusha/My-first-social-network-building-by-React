@@ -21,9 +21,21 @@ const Chat = (props) => {
 				</div>
 
 				<div className={s.messages}>
-					<h4 className={s.title}>Messages</h4>
-					{/* We transfer messageItem from array */}
-					{messageItem}
+
+					<div className={s.messages_box}>
+						<h4 className={s.title}>Messages</h4>
+						{/* We transfer messageItem from array */}
+						{messageItem}
+					</div>
+
+					<div className={s.my_new_message}>
+						<h4>my new message</h4>
+						<div className={s.new_message} contenteditable="true"></div>
+						<div className={s.button}>
+							<button type="submit" className="btn" href="#">Send</button>
+						</div>
+					</div>
+
 				</div>
 			</div>
 

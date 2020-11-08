@@ -60,10 +60,10 @@
 	*/
 }
 html {
-	margin-right: calc(
-		-1 * (100vw - 100%)
-	); /* Вычисляем ширину вертикальной полосы прокрутки при динамическом увеличении контента и задаем странице сдвиг */
-	overflow-x: hidden; /* Скрываем горизонтальная полоса прокрутки*/
+	margin-right: calc(-1 * (100vw - 100%));
+	/* Вычисляем ширину вертикальной полосы прокрутки при динамическом увеличении контента и задаем странице сдвиг */
+	overflow-x: hidden;
+	/* Скрываем горизонтальная полоса прокрутки*/
 	font-size: 10px;
 	outline: none;
 }
@@ -96,6 +96,9 @@ a {
 }
 a:hover {
 	color: #f27935;
+}
+button {
+	cursor: pointer;
 }
 .btn {
 	text-align: center;
@@ -176,7 +179,7 @@ h2 {
 h3 {
 	font-family: "Kreon", serif;
 	font-weight: 300;
-	font-size: 2.4rem;
+	font-size: 1.8rem;
 	line-height: 110%;
 	letter-spacing: 0.05rem;
 	color: #3a444e;

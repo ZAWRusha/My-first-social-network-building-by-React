@@ -10,8 +10,12 @@
 	min-width: 250px;
 }
 .messages {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	width: 66.7%;
 	min-width: 500px;
+	/* padding-bottom: 15px; */
 }
 .title {
 	display: flex;
@@ -19,4 +23,28 @@
 	justify-content: center;
 	padding: 25px;
 	color: #899eb1;
+}
+.my_new_message {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 100%;
+	padding: 10px 15px 15px;
+	border-top: 1px solid #dee3e9;
+
+}
+.new_message {
+	width: 90%;
+	font-size: 1.6rem;
+	padding: 1rem;
+	background: #f2f7fb;
+	border-radius: 1rem;
+	color: #5b5b5b;
+	margin: 10px 0;
+	outline: none;
+}
+.button {
+	display: block;
+	text-align: right;
+	/* border: 1px solid; */
 }

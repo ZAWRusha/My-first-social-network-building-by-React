@@ -10,7 +10,6 @@ const Settings = (props) => {
 		</div>
 	)
 
-
 }
 
 export default Settings
